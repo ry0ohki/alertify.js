@@ -137,7 +137,7 @@
 			switch (type) {
 			case "confirm":
 			case "prompt":
-				html = html.replace("{{buttons}}", dialogs.buttons.cancel + dialogs.buttons.ok);
+				html = html.replace("{{buttons}}", dialogs.buttons.ok + dialogs.buttons.cancel);
 				html = html.replace("{{ok}}", labels.ok).replace("{{cancel}}", labels.cancel);
 				break;
 			case "alert":
